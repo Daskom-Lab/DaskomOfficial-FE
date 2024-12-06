@@ -1,4 +1,5 @@
 import {Pagination} from "@nextui-org/react"
+
 export const ContentProject = () => {
     return (
       <section className="relative max-w-5xl mx-auto p-4">
@@ -123,9 +124,9 @@ export const ContentProject = () => {
             </div>
 
             {/* pagination */}
-            <div className="flex items-center justify-center mt-12 mb-6">
+            {/* <div className="flex items-center justify-center mt-12 mb-6">
                 <Pagination total={5} initialPage={1} />
-            </div>
+            </div> */}
       </section>
     );
   };

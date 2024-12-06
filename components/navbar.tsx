@@ -60,7 +60,7 @@ export const Navbar = () => {
             <Button
               isExternal
               as={Link}
-              className="text-md font-semibold text-white bg-lightGreen"
+              className="text-md font-semibold text-white bg-darkGreen"
               href={siteConfig.links.sponsor}
               variant="flat"
             >
