@@ -4,27 +4,6 @@ import { DlorLogo } from "@/components/icons";
 export const ContentRecruitment = () => {
   return (
     <section className="max-w-6xl mx-auto p-8">
-      {/* Title, Description, and Logo Section */}
-      <div className="text-center mb-24">
-        <h2 className="max-w-3xl mx-auto text-5xl font-semibold mb-12 bg-gradient-to-r from-darkGreen to-lightGreen bg-clip-text text-transparent">
-          DASKOM LABORATORY OPEN RECRUITMENT
-        </h2>
-        <div className="flex justify-center mb-8">
-          <DlorLogo />
-        </div>
-        {/* Visit Recruitment Website Button below image */}
-        <div className="flex justify-center mt-8">
-          <a
-            href="https://www.your-recruitment-website.com"  // Recruitment Website Link
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-800 text-white py-3 px-10 rounded-full text-md font-semibold hover:bg-gray-700 transition duration-300 transform hover:scale-105"
-          >
-            Visit Recruitment Website
-          </a>
-        </div>
-      </div>
-
       {/* Requirements Section */}
       <div className="space-y-8 mb-12">
         <h3 className="text-3xl font-semibold text-start text-darkGreen">Requirements</h3>

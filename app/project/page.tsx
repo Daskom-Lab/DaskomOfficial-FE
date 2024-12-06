@@ -1,9 +1,11 @@
-import { title } from "@/components/primitives";
+import { ContentProject } from "@/components/contentProject";
+import { Footer } from "@/components/footer";
 
-export default function DocsPage() {
+export default function ProjectLayout() {
   return (
-    <div>
-      <h1 className={title()}>Docs</h1>
-    </div>
+    <section className="">
+        <ContentProject />
+        <Footer />
+    </section>
   );
 }
