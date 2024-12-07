@@ -21,7 +21,7 @@ export const Navbar = () => {
       <NextUINavbar
         maxWidth="xl"
         position="sticky"
-        className="border-2 shadow-sm shadow-black mt-2 rounded-full max-w-5xl mx-auto"
+        className="border-2 shadow-sm shadow-black mt-2 rounded-full max-w-6xl mx-auto"
       >
         {/* Logo di Kiri */}
         <NavbarContent className="flex basis-auto sm:basis-1/5" justify="start">
@@ -42,7 +42,7 @@ export const Navbar = () => {
                     linkStyles({ color: "foreground" }),
                     "relative px-2 py-1 transition duration-200 hover:text-darkGreen",
                     "hover:border-b-2 hover:border-darkGreen",
-                    "font-semibold"
+                    "font-semibold text-xl"
                   )}                  
                   href={item.href}
                 >
@@ -60,7 +60,7 @@ export const Navbar = () => {
             <Button
               isExternal
               as={Link}
-              className="text-md font-semibold text-white bg-lightGreen"
+              className="text-md font-semibold text-white bg-darkGreen"
               href={siteConfig.links.sponsor}
               variant="flat"
             >

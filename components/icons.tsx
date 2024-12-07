@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export const Logo: React.FC = () => (
   <Image
-    src="/daskom icon.svg" 
+    src="Logo Navbar (sesudah).svg" 
     alt="Logo"
-    width={45}
-    height={45} 
+    width={120}
+    height={120} 
     priority 
   />
 );
@@ -22,6 +22,18 @@ export const DlorLogo: React.FC = () => (
     height={600} 
     priority 
   />
+);
+
+export const Web1: React.FC = () => (
+  <div className="relative w-full h-64"> {/* Menambahkan container dengan ukuran relatif */}
+    <Image
+      src="/images/Daskom Web 1.0.png"
+      alt="dlor logo"
+      layout="fill" // Mengisi kontainer dengan ukuran gambar
+      objectFit="cover" // Menjaga gambar tetap ter-cover
+      priority
+    />
+  </div>
 );
 
 export const Line: React.FC = () => (
