@@ -32,7 +32,7 @@ export const siteConfig = {
     },
     {
       label: "Recruitment",
-      href: "/recruitment",
+      href: "/dlor",
     },
     {
       label: "Showcase Project",
