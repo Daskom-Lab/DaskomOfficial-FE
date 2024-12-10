@@ -3,15 +3,15 @@ import { DlorLogo } from "@/components/icons";
 
 export const ContentRecruitment = () => {
   return (
-    <section className="max-w-6xl mx-auto p-8">
+    <section className="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
       {/* Requirements Section */}
       <div className="space-y-8 mb-12">
-        <h3 className="text-3xl font-semibold text-start text-darkGreen">Requirements</h3>
+        <h3 className="text-3xl sm:text-3xl font-semibold text-center sm:text-left text-darkGreen">Requirements</h3>
 
         {/* General Requirements */}
-        <div className="bg-gradient-to-r from-gray-100 to-white p-6 rounded-lg shadow-lg">
-          <h4 className="text-2xl font-semibold text-center mb-4 text-darkGreen">General Requirements</h4>
-          <ul className="list-disc pl-6 space-y-3 text-gray-600 text-start">
+        <div className="bg-gradient-to-r from-gray-100 to-white p-4 sm:p-6 rounded-lg shadow-lg">
+          <h4 className="text-xl sm:text-2xl font-semibold text-center mb-4 text-darkGreen">General Requirements</h4>
+          <ul className="list-disc pl-4 sm:pl-6 space-y-3 text-gray-600 text-left">
             <li>Faithful to God Almighty.</li>
             <li>Must be an undergraduate student in one of the following programs:
               S1 Telecommunication Engineering, S1 Biomedical Engineering, S1 Energy Systems Engineering, S1 Electrical Engineering, or S1 Physics Engineering.
@@ -23,9 +23,9 @@ export const ContentRecruitment = () => {
         </div>
 
         {/* Specific Requirements */}
-        <div className="bg-gradient-to-r from-gray-100 to-white p-6 rounded-lg shadow-lg">
-          <h4 className="text-2xl font-semibold text-center mb-4 text-darkGreen">Specific Requirements</h4>
-          <ul className="list-disc pl-6 space-y-3 text-gray-600 text-start">
+        <div className="bg-gradient-to-r from-gray-100 to-white p-4 sm:p-6 rounded-lg shadow-lg">
+          <h4 className="text-xl sm:text-2xl font-semibold text-center mb-4 text-darkGreen">Specific Requirements</h4>
+          <ul className="list-disc pl-4 sm:pl-6 space-y-3 text-gray-600 text-left">
             <li>Creative CV and Formal CV.</li>
             <li>1st Semester Transcript.</li>
             <li>Full body photo (4R, color, in JPEG/JPG format, wearing proper attire, with a plain background).</li>

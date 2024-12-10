@@ -1,11 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
-  NavbarMenu,
-  NavbarMenuToggle,
   NavbarBrand,
   NavbarItem,
-  NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
@@ -16,12 +16,14 @@ import { siteConfig } from "@/config/site";
 import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
+  const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
+
   return (
     <section className="m-5">
       <NextUINavbar
         maxWidth="xl"
         position="sticky"
-        className="border-2 shadow-sm shadow-black mt-2 rounded-full max-w-6xl mx-auto"
+        className="z-50 bg-white border-2 shadow-sm shadow-black mt-2 rounded-full max-w-6xl mx-auto"
       >
         {/* Logo di Kiri */}
         <NavbarContent className="flex basis-auto sm:basis-1/5" justify="start">
@@ -55,7 +57,7 @@ export const Navbar = () => {
 
 
         {/* Button LMS di Kanan */}
-        <NavbarContent className="basis-auto sm:basis-1/5" justify="end">
+        <NavbarContent className="hidden lg:flex basis-auto sm:basis-1/5" justify="end">
           <NavbarItem className="hidden md:flex">
             <Button
               isExternal
@@ -69,33 +71,66 @@ export const Navbar = () => {
           </NavbarItem>
         </NavbarContent>
 
-        {/* Mobile Menu */}
-        <NavbarContent className="sm:hidden basis-auto pl-4" justify="end">
-          <NavbarMenuToggle />
+        {/* Mobile Menu Toggle */}
+        <NavbarContent className="lg:hidden basis-auto pl-4" justify="end">
+          <button
+            aria-expanded={isMenuOpen}
+            className="relative w-8 h-8 flex flex-col justify-between items-center group focus:outline-none"
+            onClick={() => setMenuOpen(!isMenuOpen)}
+          >
+            <span
+              className={clsx(
+                "block w-full h-1 bg-darkGreen rounded-sm transition-transform duration-300 ease-in-out",
+                isMenuOpen && "rotate-45 translate-y-4"
+              )}
+            ></span>
+            <span
+              className={clsx(
+                "block w-full h-1 bg-darkGreen rounded-sm transition-opacity duration-300 ease-in-out",
+                isMenuOpen && "opacity-0"
+              )}
+            ></span>
+            <span
+              className={clsx(
+                "block w-full h-1 bg-darkGreen rounded-sm transition-transform duration-300 ease-in-out",
+                isMenuOpen && "-rotate-45 -translate-y-3"
+              )}
+            ></span>
+          </button>
         </NavbarContent>
 
-        {/* Mobile Menu Items */}
-        <NavbarMenu>
-          <div className="mx-4 mt-16 flex flex-col gap-2">
-            {siteConfig.navMenuItems.map((item, index) => (
-              <NavbarMenuItem key={`${item}-${index}`}>
-                <Link
-                  color={
-                    index === 2
-                      ? "primary"
-                      : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                  }
-                  href="#"
-                  size="lg"
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+        <div className="absolute mt-3 top-full left-0 w-full rounded-lg bg-white shadow-lg p-4 z-50">
+          <ul className="flex flex-col items-center gap-7">
+            {siteConfig.navMenuItems.map((item) => (
+              <NavbarItem key={item.href}>
+                <NextLink
+                  className={clsx(
+                    "text-lg text-darkGreen font-semibold",
+                    "hover:text-lightGreen"
+                  )}
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
                 >
                   {item.label}
-                </Link>
-              </NavbarMenuItem>
+                </NextLink>
+              </NavbarItem>
             ))}
-          </div>
-        </NavbarMenu>
+            <NavbarItem>
+              <Button
+                isExternal
+                as={Link}
+                className="text-md font-semibold text-white bg-darkGreen w-full" // Sama dengan gaya desktop
+                href={siteConfig.links.sponsor}
+                variant="flat"
+              >
+                LMS
+              </Button>
+            </NavbarItem>
+          </ul>
+        </div>
+        )}
       </NextUINavbar>
     </section>
   );
