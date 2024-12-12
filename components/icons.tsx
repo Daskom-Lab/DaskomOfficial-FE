@@ -139,10 +139,22 @@ export const AboutProfile: React.FC = () => (
     <Image
       src="/images/aboutProfile.png"
       alt="About Profile"
-      className="hidden sm:block rounded-lg object-cover drop-shadow-lg"
+      className="hidden md:hidden xl:block rounded-lg object-cover drop-shadow-lg"
       width={1500}
       height={500}
       priority
+    />
+    <Image
+      src="/images/aboutProfile.png"
+      alt="About Profile"
+      className="hidden md:block lg:hidden rounded-lg object-cover drop-shadow-lg"
+      width={1500}
+      height={500}
+      style={{
+        objectFit: "cover", 
+        objectPosition: "65% 30%", 
+        height: "100vh", 
+      }}
     />
     <Image
       src="/images/aboutProfile.png"
@@ -164,14 +176,26 @@ export const ProjectBackground: React.FC = () => (
     <Image
       src="/images/projectBackground.png"
       alt="Project Background"
-      className="hidden sm:block rounded-lg object-cover drop-shadow-lg"
+      className="hidden sm:block md:hidden rounded-lg object-cover drop-shadow-lg"
       width={1500}
       height={500}
       priority
     />
     <Image
       src="/images/projectBackground.png"
-      alt="About Profile"
+      alt="Project Background"
+      className="hidden md:block rounded-lg object-cover drop-shadow-lg"
+      width={1500}
+      height={500}
+      style={{
+        objectFit: "cover", 
+        objectPosition: "65% 30%", 
+        height: "100vh", 
+      }}
+    />
+    <Image
+      src="/images/projectBackground.png"
+      alt="Project Background"
       className="block sm:hidden rounded-lg object-cover drop-shadow-lg"
       width={1500}
       height={500}
