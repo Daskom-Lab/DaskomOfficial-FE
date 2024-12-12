@@ -1,9 +1,11 @@
-import { title } from "@/components/primitives";
+import { ContentAbout } from "@/components/contentAbout";
+import { Footer } from "@/components/footer";
 
-export default function AboutPage() {
+export default function AboutLayout() {
   return (
-    <div>
-      <h1 className={title()}>About</h1>
-    </div>
+    <section className="-mt-[130px] overflow-x-hidden">
+        <ContentAbout />
+        <Footer />
+    </section>
   );
 }
