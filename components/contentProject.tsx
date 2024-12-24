@@ -27,7 +27,7 @@ export const ContentProject = () => {
                             href="https://recruitment.daskomlab.com/"  // Recruitment Website Link
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-gray-800 text-white py-2 px-6 sm:py-3 sm:px-10 rounded-full text-sm sm:text-md md:text-xl font-semibold hover:bg-gray-700 transition duration-300 transform hover:scale-105"
+                            className="bg-gray-800 text-white py-5 px-6 sm:py-3 sm:px-10 md:py-8 md:px-12 lg:py-3 lg:px-10 rounded-full text-sm sm:text-md md:text-2xl lg:text-xl font-semibold hover:bg-gray-700 transition duration-300 transform hover:scale-105"
                         >
                             Visit Recruitment Website
                         </a>
