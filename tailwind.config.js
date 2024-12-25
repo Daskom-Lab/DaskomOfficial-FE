@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         darkGreen: '#415E15', // Hijau tua
         lightGreen: '#87C42B', // Hijau muda
+        forestGreen: '#142E38',
         Purple: '#B0689A', // core
         softBlue: '#618B98', // cmd
         softGreen: '#4D7E5F', // atc
