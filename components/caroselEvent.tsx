@@ -1,13 +1,17 @@
-'use client';  
+'use client';
 
 import { useState } from 'react';
 
 export const CaroselEvent = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    { src: 'https://via.placeholder.com/800x400?text=Image+1', description: 'Deskripsi untuk Divisi 1' },
-    { src: 'https://via.placeholder.com/800x400?text=Image+2', description: 'Deskripsi untuk Divisi 2' },
-    { src: 'https://via.placeholder.com/800x400?text=Image+3', description: 'Deskripsi untuk Divisi 3' },
+    { src: '/images/wisuda.JPG', eventName: 'Wisuda Asisten' },
+    { src: '/images/syukuran.JPG', eventName: 'Syukuran' },
+    { src: '/images/building.JPG', eventName: 'Building Team' },
+    { src: '/images/fotoasisten.jpeg', eventName: 'Foto Bersama Asisten' },
+    { src: '/images/makrab.JPG', eventName: 'Malam Keakraban' },
+    { src: '/images/baksos.JPG', eventName: 'Bakti Sosial' },
+    { src: '/images/building.JPG', eventName: 'Firewall Party' },
   ];
 
   const nextSlide = () => {
@@ -21,16 +25,17 @@ export const CaroselEvent = () => {
   return (
     <section className="max-w-5xl mx-auto mt-6 p-4">
       <div className="relative group">
+        {/* Gambar */}
         <img
           src={images[currentSlide].src}
-          alt={`Divisi ${currentSlide + 1}`}
-          className="w-full h-auto rounded-lg"
+          alt={images[currentSlide].eventName}
+          className="w-full h-auto rounded-xl transition-all duration-700 ease-in-out filter brightness-50 group-hover:brightness-100"
         />
-        {/* Deskripsi teks */}
+        {/* Judul di tengah */}
         <div
-          className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white text-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out"
         >
-          {images[currentSlide].description}
+          {images[currentSlide].eventName}
         </div>
         {/* Tombol navigasi */}
         <button

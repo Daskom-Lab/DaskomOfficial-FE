@@ -52,9 +52,9 @@ export const ContentProject = () => {
                             </div>
                         </div>
                         <div className="sm:w-1/2 md:w-full lg:w-1/2 p-4 text-center sm:text-left">
-                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2024 - Dungeon Theme</h2>
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2024 - Venture The Deep Within</h2>
                             <p className="text-sm sm:text-md lg:text-lg text-gray-800 text-center md:text-center lg:text-justify">
-                            The journey continues with the "Dungeon Theme". After exploring space, the adventurers of Daskom Laboratory now enter a dungeon full of mysteries and challenges. They face darker and more complex obstacles, testing their mental resilience and strategic thinking.
+                            The journey continues with the "Dungeon Theme". After exploring space, the adventurers of Daskom Laboratory now enter a dungeon full of mysteries and challenges.
                             </p>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ export const ContentProject = () => {
                     {/* Project 2023 */}
                     <div className="flex flex-col-reverse md:flex-col-reverse sm:flex-col lg:flex-row items-center justify-between">
                         <div className="lg:w-1/2 p-4 text-center lg:text-left">
-                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2023 - Space Theme</h2>
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2023 - Explore the Milky Way</h2>
                             <p className="text-sm sm:text-md lg:text-lg text-gray-800 text-center md:text-center lg:text-justify">
                             The journey continues with the "Space Theme". After passing through the jungle, the adventurers of Daskom Laboratory now venture into space, facing new challenges that test their imagination and ability to think ahead.
                             </p>
@@ -90,9 +90,9 @@ export const ContentProject = () => {
                             </div>
                         </div>
                         <div className="lg:w-1/2 p-4 text-center lg:text-left">
-                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2022 - Jungle Theme</h2>
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2022 - Wander Through the Wild</h2>
                             <p className="text-sm sm:text-md lg:text-lg text-gray-800 text-center md:text-center lg:text-justify">
-                            The journey continues with the Jungle Theme. After leaving the comfort of the "Vintamin Sea Theme," Daskom Laboratory's adventurers must navigate through a challenging jungle. With teamwork and ingenuity, they overcome obstacles and prepare to move on to the next stage of their innovative journey.
+                            The journey continues with the Jungle Theme. After leaving the comfort of the "Vintamin Sea Theme," Daskom Laboratory's adventurers must navigate through a challenging jungle.
                             </p>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ export const ContentProject = () => {
                     {/* Project 2021 */}
                     <div className="flex flex-col-reverse md:flex-col-reverse sm:flex-col lg:flex-row items-center justify-between">
                         <div className="lg:w-1/2 p-4 text-center lg:text-left">
-                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2021 - Vintamin Sea Theme</h2>
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2021 - Traverse from Sea to Soil</h2>
                             <p className="text-sm sm:text-md lg:text-lg text-gray-800 text-center md:text-center lg:text-justify">
                             The first story begins with the "Vintamin Sea Theme," where Daskom Laboratory invites adventurers to step out of their comfort zones, explore new ideas, and collaborate to move on to the next stage in their journey of innovation.
                             </p>
