@@ -100,8 +100,8 @@ export const PhotoProfile: React.FC = () => (
   <Image
     src="/images/Photo Profile.jpeg" 
     alt="Logo"
-    width={900}
-    height={900} 
+    width={1300}
+    height={300} 
     priority 
   />
 );

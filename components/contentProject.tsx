@@ -52,9 +52,9 @@ export const ContentProject = () => {
                             </div>
                         </div>
                         <div className="sm:w-1/2 md:w-full lg:w-1/2 p-4 text-center sm:text-left">
-                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2024 - Adventure Theme</h2>
-                            <p className="text-sm sm:text-md lg:text-lg text-softBlue text-center md:text-center lg:text-justify">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad explicabo quod doloribus nihil, autem dolorem temporibus consectetur fuga, dicta qui delectus quam suscipit et est voluptatibus ab amet reiciendis!
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2024 - Dungeon Theme</h2>
+                            <p className="text-sm sm:text-md lg:text-lg text-gray-800 text-center md:text-center lg:text-justify">
+                            The journey continues with the "Dungeon Theme". After exploring space, the adventurers of Daskom Laboratory now enter a dungeon full of mysteries and challenges. They face darker and more complex obstacles, testing their mental resilience and strategic thinking.
                             </p>
                         </div>
                     </div>
@@ -62,15 +62,15 @@ export const ContentProject = () => {
                     {/* Project 2023 */}
                     <div className="flex flex-col-reverse md:flex-col-reverse sm:flex-col lg:flex-row items-center justify-between">
                         <div className="lg:w-1/2 p-4 text-center lg:text-left">
-                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2023 - Retro Arcade Theme</h2>
-                            <p className="text-sm sm:text-md lg:text-lg text-softBlue text-center md:text-center lg:text-justify">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad explicabo quod doloribus nihil, autem dolorem temporibus consectetur fuga, dicta qui delectus quam suscipit et est voluptatibus ab amet reiciendis!
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2023 - Space Theme</h2>
+                            <p className="text-sm sm:text-md lg:text-lg text-gray-800 text-center md:text-center lg:text-justify">
+                            The journey continues with the "Space Theme". After passing through the jungle, the adventurers of Daskom Laboratory now venture into space, facing new challenges that test their imagination and ability to think ahead.
                             </p>
                         </div>
                         <div className="lg:w-1/2 p-4">
                             <div className="w-full max-w-4xl shadow-xl rounded-lg overflow-hidden">
                                 <img
-                                src="/images/DLOR2024.jpeg"
+                                src="/images/DLOR2023.jpeg"
                                 alt="2023 Retro Arcade Theme"
                                 className="w-full h-auto object-cover transition duration-300 ease-in-out transform hover:scale-105"
                                 />
@@ -83,16 +83,16 @@ export const ContentProject = () => {
                         <div className="lg:w-1/2 p-4">
                             <div className="w-full max-w-4xl shadow-xl rounded-lg overflow-hidden">
                                 <img
-                                src="/images/DLOR2024.jpeg"
+                                src="/images/DLOR2022.jpeg"
                                 alt="2022 Tech Innovations"
                                 className="w-full h-auto object-cover transition duration-300 ease-in-out transform hover:scale-105"
                                 />
                             </div>
                         </div>
                         <div className="lg:w-1/2 p-4 text-center lg:text-left">
-                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2022 - Tech Innovations</h2>
-                            <p className="text-sm sm:text-md lg:text-lg text-softBlue text-center md:text-center lg:text-justify">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad explicabo quod doloribus nihil, autem dolorem temporibus consectetur fuga, dicta qui delectus quam suscipit et est voluptatibus ab amet reiciendis!
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2022 - Jungle Theme</h2>
+                            <p className="text-sm sm:text-md lg:text-lg text-gray-800 text-center md:text-center lg:text-justify">
+                            The journey continues with the Jungle Theme. After leaving the comfort of the "Vintamin Sea Theme," Daskom Laboratory's adventurers must navigate through a challenging jungle. With teamwork and ingenuity, they overcome obstacles and prepare to move on to the next stage of their innovative journey.
                             </p>
                         </div>
                     </div>
@@ -100,48 +100,29 @@ export const ContentProject = () => {
                     {/* Project 2021 */}
                     <div className="flex flex-col-reverse md:flex-col-reverse sm:flex-col lg:flex-row items-center justify-between">
                         <div className="lg:w-1/2 p-4 text-center lg:text-left">
-                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2021 - Future Technologies</h2>
-                            <p className="text-sm sm:text-md lg:text-lg text-softBlue text-center md:text-center lg:text-justify">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad explicabo quod doloribus nihil, autem dolorem temporibus consectetur fuga, dicta qui delectus quam suscipit et est voluptatibus ab amet reiciendis!
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2021 - Vintamin Sea Theme</h2>
+                            <p className="text-sm sm:text-md lg:text-lg text-gray-800 text-center md:text-center lg:text-justify">
+                            The first story begins with the "Vintamin Sea Theme," where Daskom Laboratory invites adventurers to step out of their comfort zones, explore new ideas, and collaborate to move on to the next stage in their journey of innovation.
                             </p>
                         </div>
                         <div className="lg:w-1/2 p-4">
                             <div className="w-full max-w-4xl shadow-xl rounded-lg overflow-hidden">
                                 <img
-                                src="/images/DLOR2024.jpeg"
+                                src="/images/DLOR2021.jpeg"
                                 alt="2021 Future Technologies"
                                 className="w-full h-auto object-cover transition duration-300 ease-in-out transform hover:scale-105"
                                 />
                             </div>
                         </div>
                     </div>
-        
-                    {/* Project 2020 */}
-                    <div className="flex flex-col sm:flex-col lg:flex-row items-center justify-between mt-[-50px] sm:mt-8 lg:mt8">
-                        <div className="lg:w-1/2 p-4">
-                            <div className="w-full max-w-4xl shadow-xl rounded-lg overflow-hidden">
-                                <img
-                                src="/images/DLOR2024.jpeg"
-                                alt="2020 Digital Revolution"
-                                className="w-full h-auto object-cover transition duration-300 ease-in-out transform hover:scale-105"
-                                />
-                            </div>
-                        </div>
-                        <div className="lg:w-1/2 p-4 text-center lg:text-left">
-                            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-darkGreen mb-4 text-center md:text-center lg:text-left">2020 - Digital Revolution</h2>
-                            <p className="text-sm sm:text-md lg:text-lg text-softBlue text-center md:text-center lg:text-justify">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad explicabo quod doloribus nihil, autem dolorem temporibus consectetur fuga, dicta qui delectus quam suscipit et est voluptatibus ab amet reiciendis!
-                            </p>
-                        </div>
-                    </div>
-
+    
                 </div>
         </div>
 
         {/* pagination */}
-        {/* <div className="flex items-center justify-center mt-12 mb-6">
+        <div className="flex items-center justify-center mt-12 mb-6">
             <Pagination total={5} initialPage={1} />
-        </div> */}
+        </div>
     </section>
   );
 };

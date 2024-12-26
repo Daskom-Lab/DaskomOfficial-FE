@@ -26,7 +26,7 @@ export const ContentAbout = () => {
                         </div>
 
                         {/* Daskom-Lab Logo */}
-                        <div className="lg:w-1/3 lg:mt-16 mt-[150px] sm:mt-24 md:mt-[300px] lg:mt-24 mr-2 flex justify-center items-center">
+                        <div className="lg:w-1/3 mt-[150px] sm:mt-24 md:mt-[300px] lg:mt-24 mr-2 flex justify-center items-center">
                             <DaskomLogo />
                         </div>
                     </div>
@@ -50,22 +50,23 @@ export const ContentAbout = () => {
             {/* Location Section */}
             <div className="max-w-5xl mx-auto mt-24 mb-16 px-4 text-center">
                 <h2 className="font-semibold text-3xl sm:text-4xl mb-8 text-darkGreen">
-                LOCATION 🏛️
+                    LOCATION 🏛️
                 </h2>
                 <p className="text-base sm:text-lg lg:text-xl text-darkGreen leading-relaxed mb-8 text-justify font-semibold">
-                Our practical labs are located in rooms 10.02 & 10.04, and our research
-                activities are conducted in room 10.01 (Telkom University Landmark Tower).
+                    Our practical labs are located in rooms 10.02 & 10.04, and our research
+                    activities are conducted in room 10.01 (Telkom University Landmark Tower).
                 </p>
                 <div className="relative w-full h-64">
                     <iframe
-                        className="w-full h-full rounded-lg shadow-lg"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.527535708291!2d107.6270074!3d-6.9750387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9c28f51a3e3%3A0x2619e8eb2d6b33cf!2sTelkom%20University!5e0!3m2!1sen!2sid!4v1691406391164!5m2!1sen!2sid"
-                        allowFullScreen
-                        loading="lazy"
+                    className="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.526448621544!2d107.630540!3d-6.973230!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9c28f51a3e3%3A0x2619e8eb2d6b33cf!2sTelkom%20University%20Landmark%20Tower!5e0!3m2!1sen!2sid!4v1691406391164!5m2!1sen!2sid"
+                    allowFullScreen
+                    loading="lazy"
                     ></iframe>
                 </div>
             </div>
-            
+
+
         </section>
     );
 };
