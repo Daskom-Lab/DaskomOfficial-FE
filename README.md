@@ -1,53 +1,28 @@
-# Next.js & NextUI Template
+<p align="center"><img src="public/Logo Navbar (sesudah).svg" width="350"></p>
+<p align="center" style="font-size:20px;font-weight:600">WELCOME TO THE OFFICIAL WEBSITE OF DASKOM LABORATORY</p>
+<br>
 
-This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
+## About Daskom Laboratory Website
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-app-template)
+The official website of [Daskom Laboratory](https://daskomlab.com/) serves as the main platform for sharing information about the laboratory's activities, divisions, and ongoing projects. This website features:
 
-## Technologies Used
+- **Laboratory Profile**: Introduction to Daskom Laboratory, including its goals, mission, and achievements.
+- **Practicum Activities**: Information about the role of laboratory assistants in supporting practicum activities.
+- **Divisions**: Overview of the divisions within Daskom Laboratory.
+- **Projects**: Showcase of various projects worked on by Daskom Laboratory, such as the recruitment platform.
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+## Developed by:
+### **UI/UX Design**:
+- [Muhammad Zaenal Abidin Abdurrahman](https://github.com/) [ZEN]  
+- [Wijdan Insania Kuncoro](https://github.com/) [DAN]
 
-## How to Use
+### **Backend Development**:
+- [Dhiya Isnavisa](https://github.com/DiyArc-350) [DHY]
 
-### Use the template with create-next-app
+### **Frontend Development**:
+- [Aliza Nurfitrian Meizahra](https://github.com/Alizaaaja4) [ALL]  
+- [Muh Zaidan Fauzan](https://github.com/Zaidanfzn) [FYN]
 
-To create a new project based on this template using `create-next-app`, run the following command:
+---
+<p align="center" style="font-style:italic">"Daskom Laboratory - Looping Forever"</p>
 
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
-```
-
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@nextui-org/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).

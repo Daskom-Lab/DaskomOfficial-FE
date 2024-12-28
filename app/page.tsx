@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <section className="">
+    <section className="mt-20">
       <ContentHome />
       <Footer />
     </section>
