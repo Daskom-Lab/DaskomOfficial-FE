@@ -190,7 +190,7 @@ export const ProjectBackground: React.FC = () => (
       style={{
         objectFit: "cover", 
         objectPosition: "65% 30%", 
-        height: "100vh", 
+        height: "103vh", 
       }}
     />
     <Image

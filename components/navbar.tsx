@@ -19,10 +19,10 @@ export const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
-    <section className="m-5 ">
+    <section className="m-5">
       <NextUINavbar
           maxWidth="xl"
-          className="z-50 bg-white border-2 shadow-sm shadow-black mt-2 mb-3 rounded-full max-w-6xl mx-auto fixed top-0 left-5 right-5"
+          className="z-50 bg-white border-2 shadow-sm shadow-black mt-2 mb-3 rounded-full max-w-[360px] mx-auto fixed top-3 left-1/2 transform -translate-x-1/2 px-2 sm:px-4 md:px-4 lg:px-4 sm:max-w-2xl md:max-w-3xl lg:max-w-6xl md:mx-auto"
         >
 
         {/* Logo di Kiri */}

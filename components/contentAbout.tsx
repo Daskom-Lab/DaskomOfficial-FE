@@ -12,7 +12,7 @@ export const ContentAbout = () => {
                         
                         {/* Title - Description */}
                         <div className="lg:w-1/2 sm:mt-16 lg:mt-16 sm:ml-6 lg:ml-6 text-left flex flex-col justify-centersm:px-6 lg:px-0">
-                            <h1 className="text-4xl mt-[-450px] sm:mt-0 md:mt-[-700px] xl:mt-0 sm:text-5xl md:text-6xl lg:text-6xl font-bold text-forestGreen mb-4 sm:text-left md:text-center lg:text-left text-center">
+                            <h1 className="text-4xl mt-[-440px] sm:mt-[10px] md:mt-[-680px] xl:mt-[20px] sm:text-5xl md:text-6xl lg:text-6xl font-bold text-forestGreen mb-4 sm:text-left md:text-center lg:text-left text-center">
                             Daskom<br></br>Laboratory
                             </h1>
                             <p className="text-base mt-0 md:mt-20 lg:mt-0 sm:text-lg md:text-2xl lg:text-lg font-semibold text-black text-justify">
@@ -26,7 +26,7 @@ export const ContentAbout = () => {
                         </div>
 
                         {/* Daskom-Lab Logo */}
-                        <div className="lg:w-1/3 mt-[150px] sm:mt-24 md:mt-[300px] lg:mt-24 mr-2 flex justify-center items-center">
+                        <div className="lg:w-1/3 mt-[160px] sm:mt-24 md:mt-[300px] lg:mt-24 mr-2 flex justify-center items-center">
                             <DaskomLogo />
                         </div>
                     </div>
