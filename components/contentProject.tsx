@@ -4,6 +4,7 @@ import { Pagination } from "@nextui-org/react";
 import { useState } from "react";
 import { ProjectBackground } from "@/components/icons";
 import { projects } from "@/components/themeDlor";
+import { FallbackDlor } from "./fallbackDlor";
 
 export const ContentProject = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -14,16 +15,7 @@ export const ContentProject = () => {
 
   // Fallback dari request (done)
   if (!Array.isArray(projects) || projects.length === 0) {
-    return (
-      <section className="w-full text-center py-20">
-        <h1 className="text-2xl font-bold text-gray-700 mb-4">
-          No projects available
-        </h1>
-        <p className="text-gray-500">
-          It seems there are no DLOR projects to display at the moment. Please check back later!
-        </p>
-      </section>
-    );
+    return <FallbackDlor />;
   }
 
   return (
