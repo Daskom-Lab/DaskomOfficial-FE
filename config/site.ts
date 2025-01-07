@@ -41,6 +41,6 @@ export const siteConfig = {
   ],
   links: {
     dlor: "https://recruitment.daskomlab.com/",
-    sponsor: "https://daskomlab.com/",
+    sponsor: "https://lms.daskomlab.com/",
   },
 };

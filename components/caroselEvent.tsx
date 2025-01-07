@@ -11,7 +11,7 @@ export const CaroselEvent = () => {
     { src: '/images/fotoasisten.jpeg', eventName: 'Foto Bersama Asisten' },
     { src: '/images/makrab.JPG', eventName: 'Malam Keakraban' },
     { src: '/images/baksos.JPG', eventName: 'Bakti Sosial' },
-    { src: '/images/building.JPG', eventName: 'Firewall Party' },
+    { src: '/images/firewallParty.jpeg', eventName: 'Firewall Party' },
   ];
 
   const nextSlide = () => {
