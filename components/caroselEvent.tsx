@@ -5,13 +5,13 @@ import { useState } from 'react';
 export const CaroselEvent = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    { src: '/images/wisuda.JPG', eventName: 'Wisuda Asisten' },
-    { src: '/images/syukuran.JPG', eventName: 'Syukuran' },
-    { src: '/images/building.JPG', eventName: 'Building Team' },
-    { src: '/images/fotoasisten.jpeg', eventName: 'Foto Bersama Asisten' },
-    { src: '/images/makrab.JPG', eventName: 'Malam Keakraban' },
-    { src: '/images/baksos.JPG', eventName: 'Bakti Sosial' },
-    { src: '/images/firewallParty.jpeg', eventName: 'Firewall Party' },
+    { src: '/images/event/wisuda.webp', eventName: 'Wisuda Asisten' },
+    { src: '/images/event/syukuran.webp', eventName: 'Syukuran' },
+    { src: '/images/event/building.webp', eventName: 'Building Team' },
+    { src: '/images/event/fotoasisten.webp', eventName: 'Foto Bersama Asisten' },
+    { src: '/images/event/makrab.webp', eventName: 'Malam Keakraban' },
+    { src: '/images/event/baksos.webp', eventName: 'Bakti Sosial' },
+    { src: '/images/event/firewallParty.webp', eventName: 'Firewall Party' },
   ];
 
   const nextSlide = () => {
