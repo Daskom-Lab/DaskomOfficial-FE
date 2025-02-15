@@ -10,29 +10,27 @@ export const ContentRecruitment = () => {
 
         {/* General Requirements */}
         <div className="bg-gradient-to-r from-gray-100 to-white p-4 sm:p-6 rounded-lg shadow-lg">
-          <h4 className="text-xl sm:text-2xl font-semibold text-center mb-4 text-darkGreen">General Requirements</h4>
+          <h4 className="text-xl sm:text-2xl font-semibold text-center mb-4 text-darkGreen">Persyaratan Umum</h4>
           <ul className="list-disc pl-4 sm:pl-6 space-y-3 text-gray-600 text-left">
-            <li>Faithful to God Almighty.</li>
-            <li>Must be an undergraduate student in one of the following programs:
-              S1 Telecommunication Engineering, S1 Biomedical Engineering, S1 Energy Systems Engineering, S1 Electrical Engineering, or S1 Physics Engineering.
-            </li>
-            <li>Minimum GPA of 3.00 in the 1st semester.</li>
-            <li>Minimum grade of B in Algorithms and Programming courses (BC considered).</li>
-            <li>Minimum grade of AB in Algorithms and Programming Labs.</li>
+            <li>Bertaqwa kepada Tuhan YME.</li>
+            <li>Mahasiswa/i Program Studi S1 Teknik Elektro atau S1 Teknik Fisika Angkatan 2024 (S1 Teknik Telekomunikasi, S1 Teknik Biomedis, dan S1 Teknik Sistem Energi menyusul).</li>
+            <li>Indeks Prestasi (IP) Semester 1 ≥  3.25 (di bawah itu akan dipertimbangkan).</li>
+            <li>Nilai Mata Kuliah (MK) Algoritma dan Pemrograman Minimal B (BC akan dipertimbangkan).</li>
+            <li>Nilai Praktikum Algoritma dan Pemrograman Minimal AB.</li>
           </ul>
         </div>
 
         {/* Specific Requirements */}
         <div className="bg-gradient-to-r from-gray-100 to-white p-4 sm:p-6 rounded-lg shadow-lg">
-          <h4 className="text-xl sm:text-2xl font-semibold text-center mb-4 text-darkGreen">Specific Requirements</h4>
+          <h4 className="text-xl sm:text-2xl font-semibold text-center mb-4 text-darkGreen">Persyaratan Khusus</h4>
           <ul className="list-disc pl-4 sm:pl-6 space-y-3 text-gray-600 text-left">
-            <li>Creative CV and Formal CV.</li>
-            <li>1st Semester Transcript.</li>
-            <li>Full body photo (4R, color, in JPEG/JPG format, wearing proper attire, with a plain background).</li>
-            <li>Vision, mission, and motivation for joining the recruitment.</li>
-            <li>Innovative ideas for the Computer Science Laboratory.</li>
-            <li>Cover letter addressed to the Assistant Coordinator and Laboratory Supervisor.</li>
-            <li>Fill out the registration form for prospective assistants to the Computer Science Laboratory below.</li>
+            <li>CV ATS (Sesuai template yang tersedia atau menggunakan format pribadi, namun masih format yang sama).</li>
+            <li>Biodata (Sesuai dengan template).</li>
+            <li>Transkrip Nilai (KHS) Semester 1.</li>
+            <li>Foto Formal Full Body Ukuran 4R Berwarna (Format JPG/JPEG, menggunakan pakaian yang sopan, dengan latar belakang bebas polos).</li>
+            <li>Visi, Misi, Motivasi Mengikuti Rekrutmen, dan Ide Inovasi untuk Laboratorium Dasar Komputer.</li>
+            <li>Surat Lamaran yang Ditujukan kepada Koordinator Asisten dan Pembina Laboratorium.</li>
+            <li>Mengisi Formulir Pendaftaran Calon Asisten Laboratorium Dasar Komputer 2025/2026.</li>
           </ul>
         </div>
       </div>
@@ -41,7 +39,7 @@ export const ContentRecruitment = () => {
       <div className="flex justify-center mt-14 mb-8 gap-8">
         {/* Apply Now Button */}
         <a
-          href="https://forms.gle/your-google-form-link"  // GForm Link
+          href="https://forms.gle/Ki1gkWtAEEEZLhjs5"  // GForm Link
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gradient-to-r from-darkGreen to-lightGreen text-white py-3 px-10 rounded-full text-md font-semibold hover:bg-green-700 transition duration-300 transform hover:scale-105"

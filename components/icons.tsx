@@ -38,7 +38,7 @@ export const DlorLogo: React.FC = () => (
 export const Web1: React.FC = () => (
   <div className="relative w-full h-64"> 
     <Image
-      src="/images/Daskom Web 1.0.png"
+      src="/images/background/Daskom Web 1.0.png"
       alt="dlor logo"
       className="absolute inset-0 object-cover w-full h-full"
       priority
@@ -98,7 +98,7 @@ export const LogoPutih: React.FC = () => (
 
 export const PhotoProfile: React.FC = () => (
   <Image
-    src="/images/Photo Profile.jpeg" 
+    src="/images/background/Photo Profile.jpeg" 
     alt="Logo"
     width={1300}
     height={300} 
@@ -137,7 +137,7 @@ export const NextUILogo: React.FC<IconSvgProps> = (props) => {
 export const AboutProfile: React.FC = () => (
   <>
     <Image
-      src="/images/aboutProfile.png"
+      src="/images/background/aboutProfile.png"
       alt="About Profile"
       className="hidden md:hidden xl:block rounded-lg object-cover drop-shadow-lg"
       width={1500}
@@ -145,7 +145,7 @@ export const AboutProfile: React.FC = () => (
       priority
     />
     <Image
-      src="/images/aboutProfile.png"
+      src="/images/background/aboutProfile.png"
       alt="About Profile"
       className="hidden md:block lg:hidden rounded-lg object-cover drop-shadow-lg"
       width={1500}
@@ -157,7 +157,7 @@ export const AboutProfile: React.FC = () => (
       }}
     />
     <Image
-      src="/images/aboutProfile.png"
+      src="/images/background/aboutProfile.png"
       alt="About Profile"
       className="block sm:hidden rounded-lg object-cover drop-shadow-lg"
       width={1500}
@@ -174,7 +174,7 @@ export const AboutProfile: React.FC = () => (
 export const ProjectBackground: React.FC = () => (
   <>
     <Image
-      src="/images/projectBackground.png"
+      src="/images/background/projectBackground.png"
       alt="Project Background"
       className="hidden sm:block md:hidden rounded-lg object-cover drop-shadow-lg"
       width={1500}
@@ -182,7 +182,7 @@ export const ProjectBackground: React.FC = () => (
       priority
     />
     <Image
-      src="/images/projectBackground.png"
+      src="/images/background/projectBackground.png"
       alt="Project Background"
       className="hidden md:block rounded-lg object-cover drop-shadow-lg"
       width={1500}
@@ -194,7 +194,7 @@ export const ProjectBackground: React.FC = () => (
       }}
     />
     <Image
-      src="/images/projectBackground.png"
+      src="/images/background/projectBackground.png"
       alt="Project Background"
       className="block sm:hidden rounded-lg object-cover drop-shadow-lg"
       width={1500}
@@ -232,7 +232,7 @@ export const DaskomLogo: React.FC = () => (
 export const PhotoGallery1: React.FC = () => (
   <>
     <Image
-      src="/images/galery2.JPG"
+      src="/images/gallery/galery2.webp"
       alt="Photo Gallery"
       className="hidden sm:block rounded-lg shadow-lg object-cover w-full h-[586px]"
       width={300}
@@ -240,7 +240,7 @@ export const PhotoGallery1: React.FC = () => (
       priority
     />
     <Image
-      src="/images/galery2.JPG"
+      src="/images/gallery/galery2.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
@@ -253,7 +253,7 @@ export const PhotoGallery1: React.FC = () => (
 export const PhotoGallery2: React.FC = () => (
   <>
     <Image
-      src="/images/galery3.JPG"
+      src="/images/gallery/galery3.webp"
       alt="Photo Gallery"
       className="hidden sm:block rounded-lg shadow-lg object-cover w-full h-[250px]"
       width={300}
@@ -261,7 +261,7 @@ export const PhotoGallery2: React.FC = () => (
       priority
     />
     <Image
-      src="/images/galery3.JPG"
+      src="/images/gallery/galery3.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
@@ -274,7 +274,7 @@ export const PhotoGallery2: React.FC = () => (
 export const PhotoGallery3: React.FC = () => (
   <>
     <Image
-      src="/images/galery4.png"
+      src="/images/gallery/galery4.png"
       alt="Photo Gallery"
       className="hidden sm:block rounded-lg shadow-lg object-cover w-full h-[400px]"
       width={300}
@@ -282,7 +282,7 @@ export const PhotoGallery3: React.FC = () => (
       priority
     />
     <Image
-      src="/images/galery4.png"
+      src="/images/gallery/galery4.png"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
@@ -295,7 +295,7 @@ export const PhotoGallery3: React.FC = () => (
 export const PhotoGallery4: React.FC = () => (
   <>
     <Image
-      src="/images/galery6.JPG"
+      src="/images/gallery/galery6.webp"
       alt="Photo Gallery"
       className="hidden sm:block rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
@@ -303,7 +303,7 @@ export const PhotoGallery4: React.FC = () => (
       priority
     />
     <Image
-      src="/images/galery6.JPG"
+      src="/images/gallery/galery6.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
@@ -316,7 +316,7 @@ export const PhotoGallery4: React.FC = () => (
 export const PhotoGallery5: React.FC = () => (
   <>
     <Image
-      src="/images/galery5.JPG"
+      src="/images/gallery/galery5.webp"
       alt="Photo Gallery"
       className="hidden sm:block mt-[-335px] rounded-lg shadow-lg object-cover w-full h-[635px]"
       width={300}
@@ -324,7 +324,7 @@ export const PhotoGallery5: React.FC = () => (
       priority
     />
     <Image
-      src="/images/galery5.JPG"
+      src="/images/gallery/galery5.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
@@ -337,7 +337,7 @@ export const PhotoGallery5: React.FC = () => (
 export const PhotoGallery6: React.FC = () => (
   <>
     <Image
-      src="/images/galery7.JPG"
+      src="/images/gallery/galery7.webp"
       alt="Photo Gallery"
       className="hidden sm:block mt-[-185px] rounded-lg shadow-xl object-cover w-full h-[485px]"
       width={300}
@@ -345,7 +345,7 @@ export const PhotoGallery6: React.FC = () => (
       priority
     />
     <Image
-      src="/images/galery7.JPG"
+      src="/images/gallery/galery7.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-xl object-cover w-full h-[300px]"
       width={300}
