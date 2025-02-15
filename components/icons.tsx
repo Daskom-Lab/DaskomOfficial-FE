@@ -2,107 +2,96 @@ import * as React from "react";
 
 import { IconSvgProps } from "@/types";
 
-import Image from "next/image";
 
 export const Logo: React.FC = () => (
   <>
-    <Image
-      src="Logo Navbar (sesudah).svg" 
+    <img
+      src="/Logo Navbar (sesudah).svg" 
       className="hidden sm:block"
       alt="Logo"
       width={120}
-      height={120} 
-      priority 
+      height={120}  
     />
-    <Image
-      src="daskom icon.svg" 
+    <img
+      src="/daskom icon.svg" 
       alt="Logo"
       className="block sm:hidden"
       width={45}
-      height={45} 
-      priority 
+      height={45}  
     />
   </>
 );
 
 export const DlorLogo: React.FC = () => (
-  <Image
+  <img
     src="/images/DLOR2024.jpeg" 
     alt="dlor logo"
     width={820}
-    height={600} 
-    priority 
+    height={600}  
   />
 );
 
 export const Web1: React.FC = () => (
   <div className="relative w-full h-64"> 
-    <Image
+    <img
       src="/images/background/Daskom Web 1.0.png"
       alt="dlor logo"
       className="absolute inset-0 object-cover w-full h-full"
-      priority
     />
   </div>
 );
 
 export const Line: React.FC = () => (
-  <Image
+  <img
     src="/line.png" 
     alt="Logo"
     width={55}
-    height={55} 
-    priority 
+    height={55}  
   />
 );
 
 export const Instagram: React.FC = () => (
-  <Image
+  <img
     src="/instagram.png" 
     alt="Logo"
     width={55}
-    height={55} 
-    priority 
+    height={55}  
   />
 );
 
 export const Linkedin: React.FC = () => (
-  <Image
+  <img
     src="/linkedin.png" 
     alt="Logo"
     width={130}
-    height={130} 
-    priority 
+    height={130}  
   />
 );
 
 export const Youtube: React.FC = () => (
-  <Image
+  <img
     src="/youtube.png" 
     alt="Logo"
     width={55}
-    height={55} 
-    priority 
+    height={55}  
   />
 );
 
 export const LogoPutih: React.FC = () => (
-  <Image
+  <img
     src="/daskom putih.png" 
     alt="Logo"
     width={100}
-    height={100} 
-    priority 
+    height={100}  
   />
 );
 
 export const PhotoProfile: React.FC = () => (
-  <Image
+  <img
     src="/images/background/Photo Profile.jpeg" 
     alt="Logo"
     width={1300}
-    height={300} 
-    priority 
+    height={300}  
   />
 );
 
@@ -136,15 +125,14 @@ export const NextUILogo: React.FC<IconSvgProps> = (props) => {
 
 export const AboutProfile: React.FC = () => (
   <>
-    <Image
+    <img
       src="/images/background/aboutProfile.png"
       alt="About Profile"
       className="hidden md:hidden xl:block rounded-lg object-cover drop-shadow-lg"
       width={1500}
       height={500}
-      priority
     />
-    <Image
+    <img
       src="/images/background/aboutProfile.png"
       alt="About Profile"
       className="hidden md:block lg:hidden rounded-lg object-cover drop-shadow-lg"
@@ -156,7 +144,7 @@ export const AboutProfile: React.FC = () => (
         height: "100vh", 
       }}
     />
-    <Image
+    <img
       src="/images/background/aboutProfile.png"
       alt="About Profile"
       className="block sm:hidden rounded-lg object-cover drop-shadow-lg"
@@ -173,15 +161,14 @@ export const AboutProfile: React.FC = () => (
 
 export const ProjectBackground: React.FC = () => (
   <>
-    <Image
+    <img
       src="/images/background/projectBackground.png"
       alt="Project Background"
       className="hidden sm:block md:hidden rounded-lg object-cover drop-shadow-lg"
       width={1500}
       height={500}
-      priority
     />
-    <Image
+    <img
       src="/images/background/projectBackground.png"
       alt="Project Background"
       className="hidden md:block rounded-lg object-cover drop-shadow-lg"
@@ -193,7 +180,7 @@ export const ProjectBackground: React.FC = () => (
         height: "103vh", 
       }}
     />
-    <Image
+    <img
       src="/images/background/projectBackground.png"
       alt="Project Background"
       className="block sm:hidden rounded-lg object-cover drop-shadow-lg"
@@ -210,147 +197,133 @@ export const ProjectBackground: React.FC = () => (
 
 export const DaskomLogo: React.FC = () => (
   <>
-    <Image
+    <img
       src="/daskomLogo.svg"
       alt="About Profile"
       className="hidden sm:block rounded-lg object-cover drop-shadow-xl"
       width={300}
       height={300}
-      priority
     />
-    <Image
+    <img
       src="/daskomLogo.svg"
       alt="About Profile"
       className="block sm:hidden rounded-lg object-cover drop-shadow-xl"
       width={150}
       height={150}
-      priority
     />
   </>
 );
 
 export const PhotoGallery1: React.FC = () => (
   <>
-    <Image
+    <img
       src="/images/gallery/galery2.webp"
       alt="Photo Gallery"
       className="hidden sm:block rounded-lg shadow-lg object-cover w-full h-[586px]"
       width={300}
       height={300}
-      priority
     />
-    <Image
+    <img
       src="/images/gallery/galery2.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
       height={300}
-      priority
     />
   </>
 );
 
 export const PhotoGallery2: React.FC = () => (
   <>
-    <Image
+    <img
       src="/images/gallery/galery3.webp"
       alt="Photo Gallery"
       className="hidden sm:block rounded-lg shadow-lg object-cover w-full h-[250px]"
       width={300}
       height={300}
-      priority
     />
-    <Image
+    <img
       src="/images/gallery/galery3.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
       height={300}
-      priority
     />
   </>
 );
 
 export const PhotoGallery3: React.FC = () => (
   <>
-    <Image
-      src="/images/gallery/galery4.png"
+    <img
+      src="/images/gallery/galery4.webp"
       alt="Photo Gallery"
       className="hidden sm:block rounded-lg shadow-lg object-cover w-full h-[400px]"
       width={300}
       height={300}
-      priority
     />
-    <Image
-      src="/images/gallery/galery4.png"
+    <img
+      src="/images/gallery/galery4.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
       height={300}
-      priority
     />
   </>
 );
 
 export const PhotoGallery4: React.FC = () => (
   <>
-    <Image
+    <img
       src="/images/gallery/galery6.webp"
       alt="Photo Gallery"
       className="hidden sm:block rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
       height={300}
-      priority
     />
-    <Image
+    <img
       src="/images/gallery/galery6.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
       height={300}
-      priority
     />
   </>
 );
 
 export const PhotoGallery5: React.FC = () => (
   <>
-    <Image
+    <img
       src="/images/gallery/galery5.webp"
       alt="Photo Gallery"
       className="hidden sm:block mt-[-335px] rounded-lg shadow-lg object-cover w-full h-[635px]"
       width={300}
       height={300}
-      priority
     />
-    <Image
+    <img
       src="/images/gallery/galery5.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-lg object-cover w-full h-[300px]"
       width={300}
       height={300}
-      priority
     />
   </>
 );
 
 export const PhotoGallery6: React.FC = () => (
   <>
-    <Image
+    <img
       src="/images/gallery/galery7.webp"
       alt="Photo Gallery"
       className="hidden sm:block mt-[-185px] rounded-lg shadow-xl object-cover w-full h-[485px]"
       width={300}
       height={300}
-      priority
     />
-    <Image
+    <img
       src="/images/gallery/galery7.webp"
       alt="Photo Gallery"
       className="block sm:hidden rounded-lg shadow-xl object-cover w-full h-[300px]"
       width={300}
       height={300}
-      priority
     />
   </>
 );
