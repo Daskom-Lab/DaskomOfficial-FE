@@ -12,11 +12,10 @@ The official website of [Daskom Laboratory](https://daskomlab.com/) serves as th
 - **Projects**: Showcase of various projects worked on by Daskom Laboratory, such as the recruitment platform.
 
 ## Developed by:
-- [Muhammad Zaenal Abidin Abdurrahman](https://github.com/Zendin110206) [ZEN]  
-- [Wijdan Insania Kuncoro](https://github.com/wijdanmkh-insk) [DAN]
-- [Dhiya Isnavisa](https://github.com/DiyArc-350) [DHY]
-- [Aliza Nurfitrian Meizahra](https://github.com/Alizaaaja4) [ALL]  
+- [Aliza Nurfitrian Meizahra](https://github.com/Alizaaaja4) [ALL]
 - [Muh Zaidan Fauzan](https://github.com/Zaidanfzn) [FYN]
+- [Muhammad Zaenal Abidin Abdurrahman](https://github.com/Zendin110206) [ZEN]  
+- [Wijdan Insania Kuncoro](https://github.com/wijdanmkh-insk) [DAN]  
 - [Muhammad Hafiz](https://github.com/mhafiz03) [MHZ]
 
 ---

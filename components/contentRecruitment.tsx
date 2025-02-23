@@ -13,10 +13,8 @@ export const ContentRecruitment = () => {
           <h4 className="text-xl sm:text-2xl font-semibold text-center mb-4 text-darkGreen">Persyaratan Umum</h4>
           <ul className="list-disc pl-4 sm:pl-6 space-y-3 text-gray-600 text-left">
             <li>Bertaqwa kepada Tuhan YME.</li>
-            <li>Mahasiswa/i Program Studi S1 Teknik Elektro atau S1 Teknik Fisika Angkatan 2024 (S1 Teknik Telekomunikasi, S1 Teknik Biomedis, dan S1 Teknik Sistem Energi menyusul).</li>
-            <li>Indeks Prestasi (IP) Semester 1 ≥  3.25 (di bawah itu akan dipertimbangkan).</li>
-            <li>Nilai Mata Kuliah (MK) Algoritma dan Pemrograman Minimal B (BC akan dipertimbangkan).</li>
-            <li>Nilai Praktikum Algoritma dan Pemrograman Minimal AB.</li>
+            <li>Mahasiswa program studi S1 Teknik Telekomunikasi, S1 Teknik Biomedis, dan S1 Teknik Sistem Energi Angkatan 2024.</li>
+            <li>Indeks Prestasi (IP) Semester 1 ≥ 3.00 di bawah itu akan dipertimbangkan.</li>
           </ul>
         </div>
 
@@ -24,10 +22,10 @@ export const ContentRecruitment = () => {
         <div className="bg-gradient-to-r from-gray-100 to-white p-4 sm:p-6 rounded-lg shadow-lg">
           <h4 className="text-xl sm:text-2xl font-semibold text-center mb-4 text-darkGreen">Persyaratan Khusus</h4>
           <ul className="list-disc pl-4 sm:pl-6 space-y-3 text-gray-600 text-left">
-            <li>CV ATS (Sesuai template yang tersedia atau menggunakan format pribadi, namun masih format yang sama).</li>
-            <li>Biodata (Sesuai dengan template).</li>
+            <li>CV ATS (Dapat menggunakan template yang sudah disediakan, namun diperbolehkan apabila menggunakan template CV yang disediakan asal tetap menggunakan format ATS)</li>
+            <li>Biodata (Sesuai dengan format).</li>
             <li>Transkrip Nilai (KHS) Semester 1.</li>
-            <li>Foto Formal Full Body Ukuran 4R Berwarna (Format JPG/JPEG, menggunakan pakaian yang sopan, dengan latar belakang bebas polos).</li>
+            <li>Foto Formal Full Body Ukuran 4R Berwarna (Format JPG/JPEG, mengenakan pakaian yang sopan, dengan latar belakang bebas polos).</li>
             <li>Visi, Misi, Motivasi Mengikuti Rekrutmen, dan Ide Inovasi untuk Laboratorium Dasar Komputer.</li>
             <li>Surat Lamaran yang Ditujukan kepada Koordinator Asisten dan Pembina Laboratorium.</li>
             <li>Mengisi Formulir Pendaftaran Calon Asisten Laboratorium Dasar Komputer 2025/2026.</li>
@@ -39,7 +37,7 @@ export const ContentRecruitment = () => {
       <div className="flex justify-center mt-14 mb-8 gap-8">
         {/* Apply Now Button */}
         <a
-          href="https://forms.gle/Ki1gkWtAEEEZLhjs5"  // GForm Link
+          href="https://forms.gle/EXaBkcZdwEi2bTVy9"  // GForm Link
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gradient-to-r from-darkGreen to-lightGreen text-white py-3 px-10 rounded-full text-md font-semibold hover:bg-green-700 transition duration-300 transform hover:scale-105"
