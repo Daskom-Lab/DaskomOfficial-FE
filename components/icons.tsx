@@ -5,6 +5,7 @@ import { IconSvgProps } from "@/types";
 
 export const Logo: React.FC = () => (
   <>
+  {/* ukuran layar lg */}
     <img
       src="/Logo Navbar (sesudah).svg" 
       className="hidden sm:block"
@@ -12,6 +13,8 @@ export const Logo: React.FC = () => (
       width={120}
       height={120}  
     />
+
+    {/* ukuran layar md - sm */}
     <img
       src="/daskom icon.svg" 
       alt="Logo"
@@ -125,13 +128,30 @@ export const NextUILogo: React.FC<IconSvgProps> = (props) => {
 
 export const AboutProfile: React.FC = () => (
   <>
+    {/* Untuk layar 2XL (≥1440px) */}
     <img
       src="/images/background/aboutProfile.png"
       alt="About Profile"
-      className="hidden md:hidden xl:block rounded-lg object-cover drop-shadow-lg"
+      className="hidden 2xl:block rounded-lg object-cover drop-shadow-lg"
+      width={1920} // Bisa disesuaikan dengan resolusi lebih besar
+      height={600}
+      style={{
+        objectFit: "cover",
+        objectPosition: "center",
+        height: "100vh",
+      }}
+    />
+
+    {/* Untuk layar XL (≥1280px & <1440px) */}
+    <img
+      src="/images/background/aboutProfile.png"
+      alt="About Profile"
+      className="hidden md:hidden xl:block 2xl:hidden rounded-lg object-cover drop-shadow-lg"
       width={1500}
       height={500}
     />
+
+    {/* Untuk layar MD - LG (768px - 1024px) */}
     <img
       src="/images/background/aboutProfile.png"
       alt="About Profile"
@@ -139,11 +159,13 @@ export const AboutProfile: React.FC = () => (
       width={1500}
       height={500}
       style={{
-        objectFit: "cover", 
-        objectPosition: "65% 30%", 
-        height: "100vh", 
+        objectFit: "cover",
+        objectPosition: "65% 30%",
+        height: "100vh",
       }}
     />
+
+    {/* Untuk layar HP kecil (≤640px) */}
     <img
       src="/images/background/aboutProfile.png"
       alt="About Profile"
@@ -151,48 +173,46 @@ export const AboutProfile: React.FC = () => (
       width={1500}
       height={500}
       style={{
-        objectFit: "cover", 
-        objectPosition: "65% 30%", 
-        height: "100vh", 
+        objectFit: "cover",
+        objectPosition: "65% 30%",
+        height: "100vh",
       }}
     />
   </>
 );
 
 export const ProjectBackground: React.FC = () => (
-  <>
+  <div className="relative w-full">
+    {/* Untuk layar kecil (< 640px) */}
     <img
       src="/images/background/projectBackground.png"
       alt="Project Background"
-      className="hidden sm:block md:hidden rounded-lg object-cover drop-shadow-lg"
-      width={1500}
-      height={500}
+      className="w-full h-screen object-cover rounded-lg drop-shadow-lg block sm:hidden"
     />
+
+    {/* Untuk layar menengah (640px - 1023px) */}
     <img
       src="/images/background/projectBackground.png"
       alt="Project Background"
-      className="hidden md:block rounded-lg object-cover drop-shadow-lg"
-      width={1500}
-      height={500}
-      style={{
-        objectFit: "cover", 
-        objectPosition: "65% 30%", 
-        height: "103vh", 
-      }}
+      className="w-full h-screen object-cover rounded-lg drop-shadow-lg hidden sm:block md:hidden"
     />
+
+    {/* Untuk layar besar (1024px - 1439px) */}
     <img
       src="/images/background/projectBackground.png"
       alt="Project Background"
-      className="block sm:hidden rounded-lg object-cover drop-shadow-lg"
-      width={1500}
-      height={500}
-      style={{
-        objectFit: "cover", 
-        objectPosition: "65% 30%", 
-        height: "100vh", 
-      }}
+      className="w-full h-screen object-cover rounded-lg drop-shadow-lg hidden md:block xl:hidden"
+      style={{ objectPosition: "65% 30%", maxHeight: "103vh" }}
     />
-  </>
+
+    {/* Untuk layar ekstra besar (≥1440px) */}
+    <img
+      src="/images/background/projectBackground.png"
+      alt="Project Background"
+      className="w-full h-screen object-cover rounded-lg drop-shadow-lg hidden xl:block"
+      style={{ objectPosition: "center", maxHeight: "103vh" }}
+    />
+  </div>
 );
 
 export const DaskomLogo: React.FC = () => (

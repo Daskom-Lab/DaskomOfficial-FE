@@ -11,7 +11,7 @@ export const CaroselEvent = () => {
     { src: '/images/event/fotoasisten.webp', eventName: 'Foto Bersama Asisten' },
     { src: '/images/event/makrab.webp', eventName: 'Malam Keakraban' },
     { src: '/images/event/baksos.webp', eventName: 'Bakti Sosial' },
-    { src: '/images/event/firewallParty.webp', eventName: 'Firewall Party' },
+    { src: '/images/event/firewallParty.webp', eventName: 'Farewell Party' },
   ];
 
   const nextSlide = () => {

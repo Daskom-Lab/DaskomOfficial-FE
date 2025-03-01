@@ -12,10 +12,10 @@ export const ContentAbout = () => {
                         
                         {/* Title - Description */}
                         <div className="lg:w-1/2 sm:mt-16 lg:mt-16 sm:ml-6 lg:ml-6 text-left flex flex-col justify-centersm:px-6 lg:px-0">
-                            <h1 className="text-4xl mt-[-440px] sm:mt-[10px] md:mt-[-680px] xl:mt-[20px] sm:text-5xl md:text-6xl lg:text-6xl font-bold text-forestGreen mb-4 sm:text-left md:text-center lg:text-left text-center">
+                            <h1 className="text-4xl mt-[-440px] sm:mt-[10px] md:mt-[-680px] xl:mt-[20px] sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-forestGreen mb-4 sm:text-left md:text-center lg:text-left text-center">
                             Daskom<br></br>Laboratory
                             </h1>
-                            <p className="text-base mt-0 md:mt-20 lg:mt-0 sm:text-lg md:text-2xl lg:text-lg font-semibold text-black text-justify">
+                            <p className="text-base mt-0 md:mt-20 lg:mt-0 xl:mt-6 sm:text-lg md:text-2xl lg:text-lg xl:text-xl font-semibold text-black text-justify">
                             Telkom University’s Computer Basics Lab (Laboratorium Daskom) is
                             a leading C programming lab within the Faculty of Electrical
                             Engineering's Computer Engineering Department. We empower students
@@ -33,7 +33,7 @@ export const ContentAbout = () => {
                 </div>
 
             {/* Galleries Section */}
-            <div className="max-w-5xl mx-auto mt-20 sm:mt-[200px] lg:mt-[200px] px-4">
+            <div className="max-w-6xl mx-auto mt-20 sm:mt-[200px] lg:mt-[200px] px-4">
                 <h2 className="font-semibold text-3xl sm:text-4xl mb-8 text-darkGreen text-center">
                     OUR GALLERIES 📸
                 </h2>
@@ -48,7 +48,7 @@ export const ContentAbout = () => {
             </div>
 
             {/* Location Section */}
-            <div className="max-w-5xl mx-auto mt-24 mb-16 px-4 text-center">
+            <div className="max-w-6xl mx-auto mt-24 mb-16 px-4 text-center">
                 <h2 className="font-semibold text-3xl sm:text-4xl mb-8 text-darkGreen">
                     LOCATION 🏛️
                 </h2>
