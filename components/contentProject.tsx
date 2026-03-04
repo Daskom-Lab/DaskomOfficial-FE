@@ -1,19 +1,41 @@
 "use client";
 
 import { Pagination } from "@nextui-org/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ProjectBackground } from "@/components/icons";
-import { projects } from "@/components/themeDlor";
+import { projects as fallbackProjects } from "@/components/themeDlor";
 import { FallbackDlor } from "./fallbackDlor";
+import { getProjects, getImageUrl, type Project } from '@/lib/api';
 
 export const ContentProject = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [projects, setProjects] = useState(fallbackProjects.map((p, i) => ({
+    ...p,
+    id: String(i),
+    image_key: p.image,
+    display_order: i,
+    created_at: '',
+    updated_at: '',
+  })));
+
+  useEffect(() => {
+    getProjects()
+      .then((data) => {
+        if (data && data.length > 0) {
+          setProjects(data.map((p: Project) => ({
+            ...p,
+            image: getImageUrl(p.image_key),
+          })));
+        }
+      })
+      .catch(() => { /* keep fallback */ });
+  }, []);
+
   const itemsPerPage = 3;
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentProjects = projects.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Fallback dari request (done)
   if (!Array.isArray(projects) || projects.length === 0) {
     return <FallbackDlor />;
   }
@@ -63,7 +85,7 @@ export const ContentProject = () => {
               <div className="lg:w-1/2 p-4">
                 <div className="w-full max-w-4xl shadow-xl rounded-lg overflow-hidden">
                   <img
-                    src={project.image}
+                    src={project.image || getImageUrl(project.image_key)}
                     alt={project.alt}
                     className="w-full h-auto object-cover transition duration-300 ease-in-out transform hover:scale-105"
                   />

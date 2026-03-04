@@ -41,6 +41,7 @@ export const siteConfig = {
   ],
   links: {
     dlor: "https://recruitment.daskomlab.com/",
-    sponsor: "https://lms.daskomlab.com/",
+    sponsor: "https://lms2.daskomlab.com/",
   },
+  cmsApiUrl: process.env.NEXT_PUBLIC_CMS_API_URL || "http://localhost:8787",
 };

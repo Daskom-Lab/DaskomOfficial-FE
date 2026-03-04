@@ -1,18 +1,36 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { getEvents, getImageUrl, type EventItem } from '@/lib/api';
+
+const fallbackImages = [
+  { src: '/images/event/wisuda.webp', eventName: 'Wisuda Asisten' },
+  { src: '/images/event/syukuran.webp', eventName: 'Syukuran' },
+  { src: '/images/event/building.webp', eventName: 'Building Team' },
+  { src: '/images/event/fotoasisten.webp', eventName: 'Foto Bersama Asisten' },
+  { src: '/images/event/makrab.webp', eventName: 'Malam Keakraban' },
+  { src: '/images/event/baksos.webp', eventName: 'Bakti Sosial' },
+  { src: '/images/event/firewallParty.webp', eventName: 'Farewell Party' },
+];
 
 export const CaroselEvent = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const images = [
-    { src: '/images/event/wisuda.webp', eventName: 'Wisuda Asisten' },
-    { src: '/images/event/syukuran.webp', eventName: 'Syukuran' },
-    { src: '/images/event/building.webp', eventName: 'Building Team' },
-    { src: '/images/event/fotoasisten.webp', eventName: 'Foto Bersama Asisten' },
-    { src: '/images/event/makrab.webp', eventName: 'Malam Keakraban' },
-    { src: '/images/event/baksos.webp', eventName: 'Bakti Sosial' },
-    { src: '/images/event/firewallParty.webp', eventName: 'Farewell Party' },
-  ];
+  const [images, setImages] = useState(fallbackImages);
+
+  useEffect(() => {
+    getEvents()
+      .then((data) => {
+        if (data && data.length > 0) {
+          setImages(
+            data.map((e: EventItem) => ({
+              src: getImageUrl(e.image_key),
+              eventName: e.event_name,
+            })),
+          );
+        }
+      })
+      .catch(() => { /* keep fallback */ });
+  }, []);
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);

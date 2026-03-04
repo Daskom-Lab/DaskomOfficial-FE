@@ -1,13 +1,52 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import { CaroselDivisi } from "./caroselDivisi";
 import { CaroselEvent } from "./caroselEvent";
-import { PhotoProfile } from "./icons";
+import { getDivisions, getAboutContent, getImageUrl, type Division } from '@/lib/api';
+
+const fallbackDivisions = [
+  { id: '1', name: 'CORE', color: '#B0689A', display_order: 1 },
+  { id: '2', name: 'ATC', color: '#4D7E5F', display_order: 2 },
+  { id: '3', name: 'CMD', color: '#618B98', display_order: 3 },
+  { id: '4', name: 'DDC', color: '#4F61D9', display_order: 4 },
+  { id: '5', name: 'HRD', color: '#6965AC', display_order: 5 },
+  { id: '6', name: 'MLC', color: '#A49A67', display_order: 6 },
+  { id: '7', name: 'RDC', color: '#AC6565', display_order: 7 },
+];
 
 export const ContentHome = () => {
+  const [divisions, setDivisions] = useState(fallbackDivisions);
+  const [homeImage, setHomeImage] = useState('/images/background/Photo Profile.jpeg');
+
+  useEffect(() => {
+    getDivisions()
+      .then((data) => {
+        if (data && data.length > 0) {
+          setDivisions(data.map((d: Division) => ({
+            id: d.id,
+            name: d.name,
+            color: d.color,
+            display_order: d.display_order,
+          })));
+        }
+      })
+      .catch(() => { /* keep fallback */ });
+
+    getAboutContent()
+      .then((about) => {
+        if (about.home_image_key) {
+          setHomeImage(getImageUrl(about.home_image_key));
+        }
+      })
+      .catch(() => { /* keep fallback */ });
+  }, []);
+
   return (
     <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Photo Asisten */}
         <div className="flex items-center justify-center mt-5 sm:mt-10 lg:mt-5">
-            <PhotoProfile/>
+            <img src={homeImage} alt="Daskom Photo Profile" width={1300} height={300} />
         </div>
 
         {/* meet out Asisten */}
@@ -28,13 +67,17 @@ export const ContentHome = () => {
             {/* sub card divisi */}
             <div className="mt-5">
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3 items-center">
-                    <div className="bg-Purple text-white rounded-full px-4 py-1 col-span-2 sm:col-span-3 lg:col-span-1 order-1 text-center">CORE</div>
-                    <div className="bg-softGreen text-white rounded-full px-4 py-1 order-2 text-center">ATC</div>
-                    <div className="bg-softBlue text-white rounded-full px-4 py-1 order-3 text-center">CMD</div>
-                    <div className="bg-softDarkBlue text-white rounded-full px-4 py-1 order-4 text-center">DDC</div>
-                    <div className="bg-softMix text-white rounded-full px-4 py-1 order-5 text-center">HRD</div>
-                    <div className="bg-softBrown text-white rounded-full px-4 py-1 order-6 text-center">MLC</div>
-                    <div className="bg-softRed text-white rounded-full px-4 py-1 order-7 text-center">RDC</div>
+                    {divisions.map((d, i) => (
+                      <div
+                        key={d.id}
+                        className={`text-white rounded-full px-4 py-1 text-center ${
+                          i === 0 ? 'col-span-2 sm:col-span-3 lg:col-span-1' : ''
+                        }`}
+                        style={{ backgroundColor: d.color, order: i + 1 }}
+                      >
+                        {d.name}
+                      </div>
+                    ))}
                 </div>
             </div>
 
@@ -51,7 +94,6 @@ export const ContentHome = () => {
                 <h2 className="bg-gradient-to-r from-darkGreen to-lightGreen bg-clip-text text-transparent">
                     OUR ACTIVITIES 
                 </h2>
-                <h2>🛠️</h2>
             </div>
 
             {/* sub judul */}

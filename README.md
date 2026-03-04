@@ -17,6 +17,7 @@ The official website of [Daskom Laboratory](https://daskomlab.com/) serves as th
 - [Muhammad Zaenal Abidin Abdurrahman](https://github.com/Zendin110206) [ZEN]  
 - [Wijdan Insania Kuncoro](https://github.com/wijdanmkh-insk) [DAN]  
 - [Muhammad Hafiz](https://github.com/mhafiz03) [MHZ]
+- [Mohammad Fiqri](https://github.com/takanashataryu) [RYU]
 
 ---
 <p align="center" style="font-style:italic">"Daskom Laboratory - Looping Forever"</p>
