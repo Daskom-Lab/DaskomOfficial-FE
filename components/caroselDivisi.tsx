@@ -1,19 +1,38 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { getDivisions, getImageUrl, type Division } from '@/lib/api';
+
+const fallbackImages = [
+  { src: '/images/divisi/CORE.webp', name: 'CORE', subtitle: 'Core Division', color: '#B0689A' },
+  { src: '/images/divisi/ATC.webp', name: 'ATC', subtitle: 'Assignment and Task Committee', color: '#4D7E5F' },
+  { src: '/images/divisi/CMD.webp', name: 'CMD', subtitle: 'Creative Media Development', color: '#618B98' },
+  { src: '/images/divisi/DDC.webp', name: 'DDC', subtitle: 'Daskom Dev Community', color: '#A49A67' },
+  { src: '/images/divisi/HRD.webp', name: 'HRD', subtitle: 'Human Resource Development', color: '#6965AC' },
+  { src: '/images/divisi/MLC.webp', name: 'MLC', subtitle: 'Maintenance and Logistic Committee', color: '#A49A67' },
+  { src: '/images/divisi/RDC.webp', name: 'RDC', subtitle: 'Rules and Discipline Committe', color: '#AC6565' },
+];
 
 export const CaroselDivisi = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [images, setImages] = useState(fallbackImages);
 
-  const images = [
-    { src: '/images/divisi/CORE.webp', name: 'CORE', subtitle: 'Core Division', color: '#B0689A' },
-    { src: '/images/divisi/ATC.webp', name: 'ATC', subtitle: 'Assignment and Task Committee', color: '#4D7E5F' },
-    { src: '/images/divisi/CMD.webp', name: 'CMD', subtitle: 'Creative Media Development', color: '#618B98' },
-    { src: '/images/divisi/DDC.webp', name: 'DDC', subtitle: 'Daskom Dev Community', color: '#A49A67' },
-    { src: '/images/divisi/HRD.webp', name: 'HRD', subtitle: 'Human Resource Development', color: '#6965AC' },
-    { src: '/images/divisi/MLC.webp', name: 'MLC', subtitle: 'Maintenance and Logistic Committee', color: '#A49A67' },
-    { src: '/images/divisi/RDC.webp', name: 'RDC', subtitle: 'Rules and Discipline Committe', color: '#AC6565' },
-  ];
+  useEffect(() => {
+    getDivisions()
+      .then((data) => {
+        if (data && data.length > 0) {
+          setImages(
+            data.map((d: Division) => ({
+              src: getImageUrl(d.image_key),
+              name: d.name,
+              subtitle: d.full_name,
+              color: d.color,
+            })),
+          );
+        }
+      })
+      .catch(() => { /* keep fallback */ });
+  }, []);
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
